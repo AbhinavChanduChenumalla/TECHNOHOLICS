@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="public/assets/img/sb_logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ 
+
+  <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css" >
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+
+
+  <!-- Template Main CSS File -->
+  <link href="\public\assets/css/style.css" rel="stylesheet">
+  <title></title>
+
+  <style type="text/css">
+    
+          .timeline ul {
+  margin: 0;
+  margin-top: 100px;
+  list-style: none;
+  position: relative;
+  padding: 1px 100px;
+  color: red;
+  font-size: 13px;
+}
+
+.timeline ul li {
+  position: relative;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  width: 250px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+/*.timeline ul li:not(:first-child) {
+  margin-top: 60px;
+}*/
+.timeline ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #aaaa;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.timeline ul li > span:before, .timeline ul li > span:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: black;
+  left: -4px;
+  top: 0;
+}
+.timeline ul li span:after {
+  top: 100%;
+}
+.timeline ul li > div {
+  margin-left: 10px;
+
+}
+
+.timeline div .title1, .timeline div .type {
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+}
+.timeline div .inf {
+  font-weight: 300;
+  color: black;
+ 
+}
+.timeline div > div {
+  margin-top: 5px;
+}
+.timeline span.number {
+  height: 100%;
+}
+.timeline span.number span {
+  position: absolute;
+  font-size: 14px;
+  left: -75px;
+  font-weight: bold;
+  color: black;
+}
+.timeline span.number span:first-child {
+  top: 0;
+}
+.timeline span.number span:last-child {
+  top: 100%;
+}
+
+
+
+
+  </style>
+</head>
+<body >
+
+           <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+  <a class="navbar-brand" href="index.html"><span style="color: #b3568c">TECHNOHOLICS</span><span style="color: #132e6e"> 2021</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+        <a class="nav-link active" href="#home"><span style="color: #132e6e"> HOME</span></a>
+    <a class="nav-link active" href="#Ag"><span style="color: black"><span style="color: #132e6e"> AGENDA</span></span></a>
+    <a class="nav-link active" href="#En"><span style="color: black"><span style="color: #132e6e"> EVENTS</span></span></a>
+     <a class="nav-link active" href="#TW"><span style="color: black">TECHNOHOLICS WINNERS </span></a>
+   <button type="button" href="#" class="btn btn-primary btn-sm">REGISTER</button>
+    </div>
+  </div>
+</nav>
+
+
+
+<br>
+<br>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 17, 2021 10:00:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "days" +" " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<br>
+<br>
+
+<div class="container" >
+ 
+  <div class="centered">
+
+    <blockquote class="blockquote text-center">
+    <h2 class="mb-0"><span style="color: #813a6d"><b>CYBERSYNC CLUB</b></span></h2>
+  
+  <h5 class="mb-0"><span style="color: #161337"><b> Presents</b></span></h5>
+  <br>
+
+  <footer class="blockquote-footer"><cite title="Source Title"><span style="color: black"><b></span></cite></b></cite></footer>
+    <h2 class="mb-0"><span style="color: black"><b><span style="color: #b3568c">TECHNOHOLICS</span><span style="color: #132e6e"> 2021</span></b></span></h2>
+    <br>
+    <footer class="blockquote-footer"><cite title="Source Title"><span style="color: black"><b># An Exceptional Experience Over The Time</span></cite></b></cite></footer>
+    <br>
+     <footer class="blockquote-footer"><cite title="Source Title"><span style="color: black"><b><h2 id="demo" style="color: #2b257d"></h2></span></cite></b></cite></footer>
+</blockquote>
+
+
+
+  </div>
+</div>
+<br>
+
+<div class="container">
+   <div class="row">
+                        <div class="col-sm">
+<a  class="btn btn-danger" href="" > Watch Live</a> 
+</div>
+                        <div class="col-sm">
+
+<a  class="btn btn-danger" href="" > Project Expo Live</a> 
+</div>
+                        <div class="col-sm">
+<a  class="btn btn-danger" href="https://t.me/technoholics2k21" > Join Telegram Group</a> 
+</div>
+
+
+</div>
+
+</div>
+<div id="Ag">
+        <div class="container">
+                <div class="timeline">
+                  <div class="section-title">
+                    
+                  </div>
+          
+                   <div class="row">
+                        <div class="col-sm-6">
+
+                            <ul>
+                                  <strong>  <h4>Schedule for 17<sup> th</sup> May 2021</h4></strong>
+                                  <br>
+                            
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title1">Inaugural</div>
+                                    </div> 
+                                    <span class="number"><span>09:00 AM</span> <span>10:00 AM</span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <div>
+                                        <div class="title1">Code-O-quick</div>
+                                    </div> 
+                                    <span class="number"><span>10:00 AM</span> <span>02:00 PM</span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <div>
+                                        <div class="title1">Tech Quiz</div>
+                                        
+                                    </div> 
+                                    <span class="number"><span>3:00 PM</span> <span>03:30 PM</span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <div>
+                                        <div class="title1">Grammar Pursuit Quiz</div>
+                                        
+                                    </div> 
+                                    <span class="number"><span>3:00 PM</span> <span>03:30 PM</span></span>
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+
+                        
+                            <ul>  
+                              <strong>  <h4>Schedule for 18<sup> th</sup> May 2021</h4></strong>
+                                  <br>
+                                                       
+                               <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title1">Virtual Innovative Idea Pitching</div>
+                                       
+                                    </div> 
+                                    <span class="number"><span>10:00 AM</span> <span>12:00 PM</span></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title1">Virtual Project Expo</div>
+                                        
+                                    </div> 
+                                    <span class="number"><span>1:00 PM</span> <span>03:00 PM</span></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title1">Speak To Lead</div>
+                                       
+                                    </div> 
+                                    <span class="number"><span>1:00 PM</span> <span>03:00 PM</span></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title1"> Valedictory</div>
+                                        
+                                    </div> 
+                                    <span class="number"><span>02:00 PM</span> <span>03:00 PM</span></span>
+                                </li>
+                               
+                             
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    </div>
+     
+<div id="En">
+     <h3>Events</h3>
+
+
+   
+
+
+
+
+
+
+
+
+   <div class="container">
+  <div class="row">
+
+
+    <div class="col-sm">
+ 
+ <div class="card" style="width: 18rem;">
+  <img class="card-img-top heimg" src="t1.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>Code-O-Quick</b></h5>
+    
+    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+  </div>
+</div>
+</div>
+
+   <div class="col-sm">
+ 
+ <div class="card" style="width: 18rem;">
+  <img class="card-img-top heimg" src="t2.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>Tech Quiz</b></h5>
+ 
+    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+  </div>
+</div>
+</div>
+
+
+
+
+    
+   <div class="col-sm">
+ 
+ <div class="card" style="width: 18rem;">
+  <img class="card-img-top heimg" src="t3.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>Grammer Pursuit Quiz </b></h5>
+
+    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+  </div>
+</div>
+</div>
+
+<div class="col-sm">
+ 
+ <div class="card" style="width: 18rem;">
+  <img class="card-img-top heimg" src="t4.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>Virtual Innovative Idea Pitching</b></h5>
+   
+    <a href="http://bit.ly/Technoholics2k21f" class="btn btn-primary">Register</a>
+  </div>
+</div>
+</div>
+<div class="col-sm">
+ 
+ <div class="card" style="width: 18rem;">
+  <img class="card-img-top heimg" src="t5.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>Virtual Project Expo</b></h5>
+ 
+    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+  </div>
+</div>
+</div>
+<div class="col-sm">
+ 
+ <div class="card" style="width: 18rem;">
+  <img class="card-img-top heimg" src="t6.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>Speak TO Lead</b></h5>
+
+    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+  </div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
