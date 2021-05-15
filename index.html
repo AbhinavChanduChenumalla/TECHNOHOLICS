@@ -121,30 +121,86 @@
 }
 
 
+ .navbar-custom {
+            background-color: #0a2c58;
+        }
+       .slide{
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 0.9s;
+}
 
+#div2 {animation-timing-function: ease;}
+@keyframes mymove {
+  from {left: -500px;}
+  to {left: 0px;}
+}
 
+          
+      
   </style>
 </head>
-<body style="background-color: #F0FFFF">
+<body >
 
-           <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
-  <a class="navbar-brand" href="index.html"><span style="color: #b3568c">TECHNOHOLICS</span><span style="color: #132e6e"> 2K21</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-        <a class="nav-link active" href="#home"><span style="color: #132e6e"> HOME</span></a>
-    <a class="nav-link active" href="#Ag"><span style="color: black"><span style="color: #132e6e">AGENDA</span></span></a>
-    <a class="nav-link active" href="#En"><span style="color: black"><span style="color: #132e6e">EVENTS</span></span></a>
-     <a class="nav-link active" href="#TW"><span style="color: black">TECHNOHOLICS WINNERS</span></a>
+
+
+
+    <nav class="navbar navbar-expand-sm fixed-top navbar-custom ">
+        <div class="container">
+            <a class="navbar-brand " href="#">
+             
+           <b><span style="color: #e5e4e2">𝐓𝐄𝐂𝐇𝐍𝐎𝐇𝐎𝐋𝐈𝐂𝐒 𝟐𝐊𝟐𝟏
+</span></b>
+            </a>
+            
+            <button class="navbar-toggler" type="button" 
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
   
-    </div>
-  </div>
-</nav>
+            <div class="collapse navbar-collapse"></div>
+  
+            <div class="collapse navbar-collapse" 
+                 id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" 
+                           href="#home">
+                           <span style="color:  #dfe3e6"><b>Home</b></span>
+                          <span class="sr-only">
+                            (current)
+                          </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                           href="#Ag">
+                          <span style="color: #dfe3e6" ><b>Agenda</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#En">
+                          <span style="color:#dfe3e6" ><b>Events</b></span>
+                        </a>
+                    </li>
 
-
-
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#Tw" style="color:  #dfe3e6" >
+                              <b> TECHNOHOLICS WINNERS             
+                         </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <br>
 <br>
 
@@ -169,7 +225,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "day" +" " + hours + "h "
+  document.getElementById("demo").innerHTML = days + "days" +" " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
@@ -182,7 +238,7 @@ var x = setInterval(function() {
 <br>
 <br>
 
-<div class="container" >
+<div class="container slide" >
  
   <div class="centered">
 
@@ -193,9 +249,10 @@ var x = setInterval(function() {
   <br>
 
   <footer class="blockquote-footer"><cite title="Source Title"><span style="color: black"><b></span></cite></b></cite></footer>
-    <h2 class="mb-0"><span style="color: black"><b><span style="color: #b3568c">TECHNOHOLICS</span><span style="color: #132e6e"> 2K21</span></b></span></h2>
+    <h2 class="mb-0"><span style="color: black"><b><span style="color: #b3568c">TECHNOHOLICS</span><span style="color: #132e6e"> 2021</span></b></span></h2>
     <br>
-    <footer class="blockquote-footer"><cite title="Source Title"><span style="color: black"><b># An Exceptional Experience Over The Time</span></cite></b></cite></footer>
+     <h5 class="mb-0"><span style="color: #161337"><b> # An Exceptional Experience Over The Time</b></span></h5>
+   
     <br>
      <footer class="blockquote-footer"><cite title="Source Title"><span style="color: black"><b><h2 id="demo" style="color: #2b257d"></h2></span></cite></b></cite></footer>
 </blockquote>
@@ -205,26 +262,25 @@ var x = setInterval(function() {
   </div>
 </div>
 <br>
-<marquee><mark>Registrations Are CLOSED!!!</mark></marquee><br><br>
+
 <div class="container">
    <div class="row">
-                        <div class="col-sm">
-<a  class="btn btn-danger" href="watch.html" > Watch Live</a> 
+                        <div class="col-sm-3">
+<a  class="btn btn-danger" href="" > Watch Live</a> 
 </div>
-     <br>
-                        <div class="col-sm">
+                        <div class="col-sm-3">
 
 <a  class="btn btn-danger" href="" > Project Expo Live</a> 
 </div>
-     <br>
-                        <div class="col-sm">
+
+                        <div class="col-sm-3">
 <a  class="btn btn-danger" href="https://t.me/technoholics2k21" > Join Telegram Group</a> 
 </div>
 
 
 </div>
 
-</div><br><hr><br><br>
+</div>
 <div id="Ag">
         <div class="container">
                 <div class="timeline">
@@ -233,8 +289,8 @@ var x = setInterval(function() {
                   </div>
           
                    <div class="row">
-                     <center><h2 style="color: solid black">Agenda</h2></center>
                         <div class="col-sm-6">
+
                             <ul>
                                   <strong>  <h4>Schedule for 17<sup> th</sup> May 2021</h4></strong>
                                   <br>
@@ -244,7 +300,7 @@ var x = setInterval(function() {
                                         <span></span>
                                         <div class="title1">Inaugural</div>
                                     </div> 
-                                    <span class="number"><span>09:00 AM</span> <span>10:00 AM</span></span>
+                                    <span class="number"><span>09:30 AM</span> <span>10:00 AM</span></span>
                                 </li>
                                 <li>
                                     <span></span>
@@ -318,103 +374,107 @@ var x = setInterval(function() {
                             </ul>
                         </div>
                     </div>
-                    <hr><br><br>
+                    <br><br>
                     </div>
      
 <div id="En">
-     <h3>Pre Competitions & Live Competitions</h3><br>
+     <h3>Events</h3>
 
 
    
+
+
+
+
+
+
+
 
    <div class="container">
   <div class="row">
 
 
-    <div class="col-sm">
- 
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top heimg" src="t1.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><b>Code-O-Quick</b></h5>
-    
-    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
-  </div>
-</div>
-</div>
-    <br>
-
    <div class="col-sm">
  
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top heimg" src="t1.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><b>Tech Quiz</b></h5>
- 
-    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img" src="t1.jpeg" alt="IMAGE">
   </div>
+
 </div>
+
+<div class="col-sm">
+ 
+
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img" src="t2.jpeg" alt="IMAGE">
+  </div>
+
 </div>
 
 
+<div class="col-sm">
+ 
+
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img" src="t3.jpeg" alt="IMAGE">
+
+  </div>
+
+</div>
+</div>
 <br>
-
-    
-   <div class="col-sm">
+<br>
+ <div class="row">
+<div class="col-sm">
  
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top heimg" src="t1.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><b>Grammer Pursuit Quiz </b></h5>
 
-    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img" src="t4.jpeg" alt="IMAGE">
   </div>
+
 </div>
-</div>
-    <br>
+
 
 <div class="col-sm">
  
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top heimg" src="t1.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><b>Virtual Innovative Idea Pitching</b></h5>
-   
-    <a href="http://bit.ly/Technoholics2k21f" class="btn btn-primary">Register</a>
+
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img" src="t5.jpeg" alt="IMAGE">
   </div>
+
 </div>
-</div>
-    <br>
+
+
 <div class="col-sm">
  
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top heimg" src="t1.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><b>Virtual Project Expo</b></h5>
- 
-    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
+
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img" src="t6.jpeg" alt="IMAGE">
   </div>
-</div>
-</div>
-    <br>
-<div class="col-sm">
- 
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top heimg" src="t1.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><b>Speak TO Lead</b></h5>
-
-    <a href="http://bit.ly/Technoholics2k21" class="btn btn-primary">Register</a>
-  </div>
-</div>
-</div>
-
 
 </div>
 </div>
 </div>
-</div>
+<br><br>
 
 
+
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Copyright © TECHNOHOLICS 2021</p>
+
+</blockquote>
 </body>
 </html>
