@@ -163,13 +163,13 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
     
   // Time calculations for days, hours, minutes and seconds
-  var day = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = day + "days" +" " + hours + "h "
+  document.getElementById("demo").innerHTML = days + "day" +" " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
@@ -205,7 +205,7 @@ var x = setInterval(function() {
   </div>
 </div>
 <br>
-<marquee><span>Registrations Are CLOSED!!!</span></marquee><br><br>
+<marquee><mark>Registrations Are CLOSED!!!</mark></marquee><br><br>
 <div class="container">
    <div class="row">
                         <div class="col-sm">
@@ -231,7 +231,7 @@ var x = setInterval(function() {
                   <div class="section-title">
                     
                   </div>
-          
+          <center><h2 style="color: solid black">Agenda</h2></center><br>
                    <div class="row">
                         <div class="col-sm-6">
 
